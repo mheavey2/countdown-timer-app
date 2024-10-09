@@ -1,0 +1,72 @@
+/* general styles */
+* {
+  box-sizing: border-box;
+}
+
+/* colour scheme */
+
+/* 
+#39D7E6
+#3c3735
+ #e68139 
+ #4D6466
+ #539fa6
+ */
+
+/* event options */
+
+.event-list-container,
+.countdown-container-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.countdown-events-list {
+  background-color: #39d7e6;
+  color: #3c3735;
+}
+.countdown-events-list legend {
+  color: #e68139;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-shadow: #f05227 1px 0 1.75px;
+}
+input[name="countdown-event"] {
+  margin: 2em;
+}
+
+label {
+  font-size: 1.6em;
+}
+/* timer */
+.countdown-container {
+  background-color: #4d6466;
+}
+
+.countdown-timer-heading {
+  margin-top: 3em;
+}
+.countdown-timer-outer {
+  border: 0.2em, dashed, #539fa6;
+  margin: 0.8em;
+  padding: 1em;
+  font-size: 3em;
+}
+.countdown-timer-times {
+  color: #f05227;
+}
+
+#countdown-timer-event {
+  color: #f05227;
+}
+
+/* return button */
+
+#return-btn {
+  background-color: #39d7e6;
+  border-radius: 50%;
+
+  padding: 1.3em;
+  margin: 4em;
+}

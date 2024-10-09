@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <a href="birthdayTimer.html" target="_blank"></a>
+    <script src="script.js" async></script>
+  </head>
+  <body>
+    <div class="event-list-container">
+      <h1>Static Countdown Timer</h1>
+      <fieldset class="countdown-events-list">
+        <legend>What are we counting down to?</legend>
+        <input
+          type="radio"
+          name="countdown-event"
+          value="birthday"
+          id="birthday"
+        />
+        <label for="birthday">Your Birthday</label><br />
+        <input type="radio" name="countdown-event" value="gig" id="gig" />
+        <label for="gig">Gig</label><br />
+        <input
+          type="radio"
+          name="countdown-event"
+          value="holidays"
+          id="holidays"
+        />
+        <label for="holidays">Holidays</label><br />
+        <input
+          type="radio"
+          name="countdown-event"
+          value="christmas"
+          id="christmas"
+        />
+        <label for="christmas">Christmas</label><br />
+      </fieldset>
+    </div>
+    <div class="countdown-container" hidden>
+      <div class="countdown-container-inner">
+        <h2 class="countdown-timer-heading">
+          The Countdown to <span id="countdown-pronoun">YOUR </span
+          ><span id="countdown-timer-event"></span> is ON!!!
+        </h2>
+        <div class="countdown-timer-outer">
+          <span
+            ><span class="countdown-timer-times" id="countdown-days"></span>
+            days
+          </span>
+          <span
+            ><span class="countdown-timer-times" id="countdown-hours"></span>
+            hours
+          </span>
+          <span>
+            <span class="countdown-timer-times" id="countdown-minutes"></span>
+            minutes and
+          </span>
+          <span
+            ><span class="countdown-timer-times" id="countdown-seconds"></span>
+            seconds
+          </span>
+        </div>
+        <button id="return-btn">RETURN TO EVENT LIST</button>
+        <buton
+          class="dynamic-birthday-timer"
+          onclick="document.location='birthdayTimer.html'"
+          >Birthday Countdown</buton
+        >
+      </div>
+    </div>
+  </body>
+</html>
